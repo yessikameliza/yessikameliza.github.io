@@ -34,16 +34,6 @@
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
-      var table = new google.visualization.Table(document.getElementById('table_div'));
-      table.draw(data, options);
-
-// Every time the table fires the "select" event, it should call your
-// selectHandler() function.
-      google.visualization.events.addListener(table, 'select', selectHandler);
-
-      function selectHandler(e) {
-        alert('A table row was selected');
-      }
     </script>
   </head>
 
@@ -51,4 +41,5 @@
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
   </body>
+  <button type="button">Cambiar Datos</button>
 </html>
